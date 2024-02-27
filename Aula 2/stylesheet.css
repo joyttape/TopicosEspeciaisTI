@@ -1,0 +1,33 @@
+.principal{
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 0;
+    background-color: white;
+    border-radius: 2%;
+}
+.cabecalho{
+    padding: 1%;
+    background-color: gray;
+}
+.corpo{
+    color:RGB 140, 76, 8;
+    font-size:12px;
+    background-color: gray;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    border-radius: 2%;
+}
+.fotos{
+    text-align:left;
+}
+.foto{
+    width: 250px;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+.perfil{
+    margin-top: 0px;
+    padding-bottom: 5px;
+    border-top: solid 1px gray;
+}
