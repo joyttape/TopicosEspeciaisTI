@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Candal&family=Just+Me+Again+Down+Here&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Seymour+One&family=Special+Elite&display=swap');
+
+:root{
+    --primeira_cor: #0D0D0D;
+    --segunda_cor: #593D25;
+    --terceira_cor: #8C593B;
+    --quarta_cor: #c7bcb8;
+    --quinta_cor: #A64444;
+    --sexta_cor: #D9967E;
+    --setima_cor: #1e3d2e;
+
+    --fonte_titulo: "Antonio", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    pad: 2% 0% 0% 15%;
+    padding: 1rem;
+    background-color: var(--primeira_cor);
+}
+
+.conteudo_cabecalho{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+.menu{
+    color: var(--quarta_cor);
+    font-family: var(--fonte_titulo);
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    font-weight: 600;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    
+}
+.menu::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background:var(--sexta_cor);
+    border-radius: 5px;
+    transform:scaleX(0);
+    transition: all 0.6s ease;
+}
+
+.menu::before{
+    bottom:0;
+    left:0;
+}
+
+.menu:hover::before{
+    transform: scaleX(1);
+}
+
+.body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:var(--quarta_cor);
+}
+
+.principal{
+    background-color:var(--quarta_cor);
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+h1{
+    font-family: var(--quinta_cor);
+    color:var(--quinta_cor);
+    font-size: 2.25rem;
+}
+
+.conteudo{
+    width: 110%;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 0.60rem;
+}
+
+.p_1,
+.p_3{
+
+    font-family: var(--fonte_titulo);
+    font-size: 1.25rem;
+    padding: 2px;
+    font-weight: 600;
+    color:var(--terceira_cor);
+    text-align: center;
+}
+
+.p_2,
+.p_4{
+    font-family: var(--fonte_titulo);
+    font-size: 1.25rem;
+    padding: 2px;
+    font-weight: 600;
+    color: var(--terceira_cor);
+    text-align: center;
+}
+
+.imagem{
+    width: 20%;
+    border-radius: 5%;
+}
+
+strong{
+    font-family: var(--fonte_titulo);
+    font-size: 1.25rem;
+    color: var(--segunda_cor);
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    font-family: var(--fonte_titulo);
+    font-size: 2rem;
+    padding: 2px;
+    font-weight: 600;
+    color:var(--terceira_cor);
+    margin-bottom: 0.40rem;
+}
+
+.divulgacao{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
+
+.links{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items:end;
+    justify-content: center;
+    gap: 5px;
+}
+
+.link:hover{
+    background-color: rgba(157, 89, 58, 0.042);
+    color:var(--quinta_cor);
+    transform: scale(0.9);
+    transition: ease-out 0.3s;
+    border-radius: 8px;
+}
+
+.link{
+    font-family: var(--fonte_titulo);
+    text-decoration: none;
+    display: block; 
+    text-align: right;
+    color: var(--quinta_cor);
+    border: 2px solid var(--quinta_cor);
+    width: 300px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.rodape{
+    font-family: var(--fonte_titulo);
+    font-size: 1.50rem;
+    text-decoration: none;
+    color: var(--quarta_cor);
+    background-color: var(--quinta_cor);
+    text-align: center;
+    padding: 0.50rem;
+    width: 100%;
+}
